@@ -4,50 +4,35 @@ public class LoginSystem {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        String namaMahasiswa = "Rakha Aminullah Muhran";
-        String nimMahasiswa = "202410370110128";
-        String tigaDigitAkhir = nimMahasiswa.substring(nimMahasiswa.length() - 3);
+        String namaAdmin = "Rk Admin";
+        String nimAdmin = "202410370110999";
 
-        Admin admin = new Admin(tigaDigitAkhir);
-        Mahasiswa mahasiswa = new Mahasiswa(namaMahasiswa, nimMahasiswa);
+        String namaMhs = "Rakha Aminullah Muhran";
+        String nimMhs = "202410370110128";
 
         System.out.println("Pilih Login:");
         System.out.println("1. Admin");
         System.out.println("2. Mahasiswa");
         System.out.print("Masukkan pilihan: ");
         int pilihan = input.nextInt();
-        input.nextLine();
+        input.nextLine(); // consume newline
 
         if (pilihan == 1) {
-            System.out.print("Masukkan username: ");
-            String username = input.nextLine();
-
-            System.out.print("Masukkan password: ");
-            String password = input.nextLine();
-
-            if (admin.login(username, password)) {
-                System.out.println("Login Admin berhasil!");
+            Admin admin = new Admin(namaAdmin, nimAdmin);
+            if (admin.login()) {
+                admin.displayInfo();
             } else {
                 System.out.println("Login gagal! Username atau password salah.");
             }
-
         } else if (pilihan == 2) {
-            System.out.print("Masukkan Nama: ");
-            String nama = input.nextLine();
-
-            System.out.print("Masukkan NIM: ");
-            String nim = input.nextLine();
-
-            if (mahasiswa.login(nama, nim)) {
-                mahasiswa.displayInfo();
+            Mahasiswa mhs = new Mahasiswa(namaMhs, nimMhs);
+            if (mhs.login()) {
+                mhs.displayInfo();
             } else {
                 System.out.println("Login gagal! Nama atau NIM salah.");
             }
-
         } else {
             System.out.println("Pilihan tidak valid.");
         }
-
-        input.close();
     }
 }
