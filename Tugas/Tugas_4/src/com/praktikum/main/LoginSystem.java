@@ -1,8 +1,6 @@
 package com.praktikum.main;
 
-import com.praktikum.users.Admin;
-import com.praktikum.users.Mahasiswa;
-import com.praktikum.users.User;
+import com.praktikum.users.*;
 
 import java.util.Scanner;
 
