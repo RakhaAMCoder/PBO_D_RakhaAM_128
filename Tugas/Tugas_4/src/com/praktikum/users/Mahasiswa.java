@@ -28,9 +28,14 @@ public class Mahasiswa extends User implements MahasiswaActions {
         System.out.print("Masukkan Lokasi Terakhir/Ditemukan: ");
         String lokasi = scan.nextLine();
 
-        System.out.println("Nama Barang:"+nama);
-        System.out.println("Deskripsi Barang:"+deskripsi);
-        System.out.println("Lokasi Terakhir/Ditemukan:"+lokasi);    }
+        reportItem(nama, deskripsi, lokasi);
+    }
+
+    public void reportItem(String nama, String deskripsi, String lokasi) {
+        System.out.println("Nama Barang: " + nama);
+        System.out.println("Deskripsi Barang: " + deskripsi);
+        System.out.println("Lokasi Terakhir/Ditemukan: " + lokasi);
+    }
 
     @Override
     public void viewReportedItems() {

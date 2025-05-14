@@ -6,7 +6,7 @@ public abstract class User {
 
     public User(String nama, String nim){
         this.nama = nama;
-        this.nim =nim;
+        this.nim = nim;
     }
 
     public void setNama(String nama) {
