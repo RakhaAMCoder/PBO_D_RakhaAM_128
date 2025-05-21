@@ -1,6 +1,6 @@
 package App;
 
-import Perpustakaan.*q;
+import Perpustakaan.*;
 
 public class Main
 {
