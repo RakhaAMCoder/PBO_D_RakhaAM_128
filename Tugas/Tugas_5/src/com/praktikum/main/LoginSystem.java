@@ -19,7 +19,7 @@ public class LoginSystem {
         userList.add(new Mahasiswa("Ghetto", "202410370110111"));
 
         while (true) {
-            System.out.println("Pilih Jenis Login: ");
+            System.out.println("\nPilih Jenis Login: ");
             System.out.println("1. Admin");
             System.out.println("2. Mahasiswa");
             System.out.println("3. Keluar");
@@ -52,7 +52,7 @@ public class LoginSystem {
                     }
                 }
                 if (!loginBerhasil) {
-                    System.out.println("Username atau Password Salah! Coba lagi.");
+                    System.out.println("\nUsername atau Password Salah! Coba lagi.");
                 }
 
             } else if (pilihan == 2) {
@@ -71,6 +71,7 @@ public class LoginSystem {
                         break;
                     }
                 }
+
                 if (!loginBerhasil) {
                     System.out.println("Nama atau Nim Salah! Coba lagi.");
                 }
