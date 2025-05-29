@@ -15,8 +15,8 @@ public class LoginSystem {
         Scanner scan = new Scanner(System.in);
 
         userList.add(new Admin("CrownVex999", "999", "admin999", "pw999"));
-        userList.add(new Mahasiswa("Rakha", "202410370110128"));
-        userList.add(new Mahasiswa("Ghetto", "202410370110111"));
+        userList.add(new Mahasiswa("Rakha", "128"));
+        userList.add(new Mahasiswa("Ghetto", "111"));
 
         while (true) {
             System.out.println("\nPilih Jenis Login: ");
