@@ -1,32 +1,35 @@
-/* style.css */
-
 .root {
-    -fx-background-color: #f0f8ff; /* Warna latar belakang */
+    -fx-background-color: #FFFFFF;
+    -fx-background-image: url("BacgroundJavaFX.gif");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
     -fx-font-family: "Arial";
 }
 
 .title-label {
-    -fx-text-fill: #5353ec;
+    -fx-text-fill: #FFFFFF;
     -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, white, 20, 0.1, 0, 0);
 }
 
 .feedback-label {
     -fx-font-size: 1.2em;
     -fx-font-weight: bold;
-    -fx-text-fill: #34495e; /* Default text color */
+    -fx-text-fill: #34495e;
 }
 
-/* Styling untuk feedback */
 .feedback-too-big {
-    -fx-text-fill: #e74c3c; /* Merah */
+    -fx-text-fill: #e74c3c;
 }
 
 .feedback-too-small {
-    -fx-text-fill: #ff7f00; /* Biru */
+    -fx-text-fill: #ff7f00;
 }
 
 .feedback-correct {
-    -fx-text-fill: #27ae60; /* Hijau */
+    -fx-text-fill: #27ae60;
+    -fx-effect: dropshadow(gaussian, Green, 15, 0.5, 0, 0);
 }
 
 .text-field {

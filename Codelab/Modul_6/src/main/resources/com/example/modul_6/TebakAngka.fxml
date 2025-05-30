@@ -32,7 +32,7 @@
                 <Button fx:id="guessButton" mnemonicParsing="false" onAction="#handleCobaTebak" prefWidth="115.0" styleClass="green-button" text="🎲 Coba Tebak!" />
             </children>
         </HBox>
-        <Label fx:id="attemptsLabel" text="Jumlah percobaan: 0" textFill="#808080">
+        <Label fx:id="attemptsLabel" text="Jumlah percobaan: 0" textFill="#FFFFFF">
             <font>
                 <Font size="14.0" />
             </font>
